@@ -1,3 +1,10 @@
+/**
+* @filename : brunch.js
+* @description : SCRIPT
+* @author : 김경의 (chanillekim@gmail.com)
+**/
+
+        
         // 스크롤
         window.addEventListener('scroll', (e) => {
             const top_menu = document.getElementById('header');
