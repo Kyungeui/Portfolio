@@ -38,62 +38,17 @@ html, body {
     float: none;
     clear: both;
 }
-/* 버튼 */
-.swipe { 
-    position: relative; 
-    transform: translate(100);
-}
-.swipe a {
-    display: block;
-    position: relative;
-}
-.swipe button { 
-    position: absolute; 
-    margin: 20px;
-    z-index: 10; 
-    top: 50%; 
-    transform: 
-    translateY(-50%);
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background-color:transparent;
-    border: 5px solid rgba(255, 255, 255, 0.363);
-    cursor: pointer;
-
-}
-.swipe button::before {
-    font-family: 'xeicon';
-    color: rgba(255, 255, 255, 0.486);
-    font-size: 70px;
-} 
-.swipe button.slick-prev {
-    left:0;
-    font-size: 0;
-    color: transparent;
-}
-.swipe button.slick-prev::before {
-    content: "\e93d";
-    font-family: 'xeicon';
-}
-.swipe button.slick-next {
-    right:0;
-    font-size: 0;
-    color: transparent;
-}
-.swipe button.slick-next::before {
-    content: "\e940";
-    font-family: 'xeicon'
-}
-
 
 /* flex 정렬 */
 .flex {
     display: flex;
-    
 }
 
 /* 상단바 */
+.toptop {
+    background-image: url(img/bg_header.png);
+    width: 100%;
+}
 .top-bar {
     position: relative;
     width: 1200px;
@@ -292,6 +247,53 @@ html, body {
 /* 일단 나머지 이미지 안 보이게 */
 .swipe .swipe-banner li{
     display: none;
+}
+/* 버튼 */
+.swipe { 
+    position: relative; 
+    transform: translate(100);
+}
+.swipe a {
+    display: block;
+    position: relative;
+}
+.swipe button { 
+    position: absolute; 
+    margin: 20px;
+    z-index: 10; 
+    top: 50%; 
+    transform: 
+    translateY(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color:transparent;
+    border: 5px solid rgba(255, 255, 255, 0.363);
+    cursor: pointer;
+
+}
+.swipe button::before {
+    font-family: 'xeicon';
+    color: rgba(255, 255, 255, 0.486);
+    font-size: 70px;
+} 
+.swipe button.slick-prev {
+    left:0;
+    font-size: 0;
+    color: transparent;
+}
+.swipe button.slick-prev::before {
+    content: "\e93d";
+    font-family: 'xeicon';
+}
+.swipe button.slick-next {
+    right:0;
+    font-size: 0;
+    color: transparent;
+}
+.swipe button.slick-next::before {
+    content: "\e940";
+    font-family: 'xeicon'
 }
 
 
@@ -588,7 +590,7 @@ html, body {
 .foot .familysite {
     position: absolute;
     top: 21px;
-    right: 300px;
+    right: 170px;
     width: 150px;
     background-color: #fff;
     display: block;
@@ -666,10 +668,3 @@ html, body {
     font-size: 10px;
 }
 
-/******/
-
-/*******/
-.menulists {
-    background-color: magenta;
-    display: none;
-}
