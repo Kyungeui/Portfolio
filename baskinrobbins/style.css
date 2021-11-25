@@ -1,9 +1,3 @@
-/**
-* @filename : style.css
-* @description : CSS
-* @author : 김경의 (chanillekim@gmail.com)
-**/
-
 @charset "utf-8";
 /* 나눔 고딕 웹폰트 */
 @import url(https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean);
@@ -154,7 +148,7 @@ html, body {
    width: 100%;
    height: 46px;
    border-bottom: 0.5px solid rgba(0, 0, 0, 0.562);
-   
+   position: relative;
 }
 .top-menu-middle {
     width: 1200px;
@@ -215,17 +209,27 @@ html, body {
     display: flex;
 }
 /* hover 메뉴박스 */
-.dropdown-content {
-    display: none;
+.drop-wrap {
+    width: 100%;
     position: absolute;
     background-color: #f9f9f9;
-    width: 1213px;
-    margin-top: 46px;
-    margin-left: -223px;
+    /* width: 1213px; */
+    width: 100%;
+    margin-top: 13px;
+    /* margin-left: -223px; */
     height: 274px;
     z-index: 1;
     border-top: 0.5px solid black;
-    border-radius: 10px;
+    border-bottom: 0.5px solid black;
+    transition: 0.5s ease-in-out;
+}
+.dropdown-content {
+    height: inherit;
+    width: 1200px;
+    margin: 0 auto;
+}
+.mover {
+    display: none;
 }
 .dropdown-content ul {
     float: left;
@@ -256,19 +260,19 @@ html, body {
 }
 /* 리스트 하나하나 마진적용 */
 .left_in01 {
-   margin-left: 94px;
+   margin-left: 80px;
 }
 .left_in02 {
-    margin-left: 66px;
+    margin-left: 67px;
 }
 .left_in03 {
-    margin-left: 84px;
+    margin-left: 85px;
 }
 .left_in04 {
-    margin-left: 68px;
+    margin-left: 70px;
 }
 .left_in05 {
-    margin-left: 65px;
+    margin-left: 67px;
 }
 .menu-btns:hover .dropdown-content {
     display: block;    
@@ -590,31 +594,30 @@ html, body {
     display: block;
 }
 /* 하단 > 두번째 라인 > 버튼 */
-.foot .familysite button {
+#btnFam { /* button */
+    cursor: pointer;
+    display: block;
     width: 100%;
     height: 32px;
     padding-left: 11px;
     border-radius: 5px;
     border: 1px solid #d1cecc;
-    background: transparent url(./img/family_size_off.png) no-repeat 100% 0;
     color: #b1ab9f;
     font-size: 11px;
     text-align: left;
     box-shadow: 2px 2px 2px 0px rgb(234 233 232);
 }
 
-/* 하단 > 두번째 라인 > 버튼 클릭 시 */
-.foot .familysite button.on {
-    background-image: url(.img/family_size_on.png);
+/* 하단 > 두번째 라인 > 버튼 클릭 시 (추가) */
+.on {
+    background: transparent url(./img/family_size_on.png) no-repeat 100% 0;
 }
-.foot .familysite .on + ul {
-    display: block;
+.off {
+    background: transparent url(./img/family_size_off.png) no-repeat 100% 0;
 }
 
 /* 하단 > 두번째 라인 > 버튼 안에 들어갈 내용 */
 .foot .familysite ul {
-    /* 보이는거 */
-    display: none;
     position: absolute;
     left: 0;
     bottom: 28px;
@@ -626,6 +629,10 @@ html, body {
     background: #fff;
     box-sizing: border-box;
     font-size: 12px;
+}
+#famsite {
+    /* 보이는거 */
+    display: none;
 }
 .foot .familysite ul li a {
     display: block;
