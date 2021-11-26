@@ -1,3 +1,8 @@
+/**
+* @filename : main.js
+* @description : JS
+* @author : 김경의 (chanillekim@gmail.com)
+**/
                 
         // Search 버튼 클릭 실행
         const search_btn = document.getElementById("btnSearch");
