@@ -1,9 +1,3 @@
-<!--
-* @filename : index.html
-* @description : HTML & SCRIPT
-* @author : 김경의 (chanillekim@gmail.com)
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,21 +18,8 @@
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
-    <script>
-      $(function() {
-        $('.slidergroup').slick( { 
-            autoplay: true,
-          autoplaySpeed: 3000,
-
-        });
-      });
-    </script>
-
 
     <title>Starbucks.html</title>
-
-    
 </head>
 
 <body>
@@ -703,7 +684,7 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 
         <!--공지사항------------------>
         <section class="line_notice">
@@ -712,8 +693,9 @@
                     <div class="line_notice_bgr">
                     <a href="javascript:doDisplay();">
                     <p class="prom_ttl">스타벅스 프로모션</p></a>
-                    <a href="javascript:doDisplay();" class="arrow_down01">
-                        <img src="img/btn_down.png" alt="down-arrow">
+                    <a href="javascript:doDisplay();" class="arrow_down01 btnSearch">
+                        <img class="off_prom" id="off_prom" src="img/btn_down.png" alt="down-arrow">
+                        <img class="on_prom" id="on_prom" src="img/arrow-up.png" alt="down-arrow" style="display: none;">
                     </a>
                     
                 </div>
@@ -725,23 +707,26 @@
                             <dt class="notice_ttl">
                                 <img src="img/notice_ttl.png" alt="공지사항" >
                             </dt>
-                            <dd>
-                                <!--공지사항 내용 바꿈-->
-                                <ul class="news_result">
-                                    <li id="bannerList">
-                                        <a href="#" id="bannerLink">2021 플래너 쿠폰 3종 유효 기간 연장 안내</a>
-                                    </li>
-                                    <!-- <li style="display: none;">
-                                        <a href="#">시스템 개선 및 점검 안내</a>
-                                    </li>
-                                    <li style="display: none;">
-                                        <a href="#">[채용] 스타벅스커피 코리아 바리스타 채용 안내 </a>
-                                    </li>
-                                    <li style="display: none;">
-                                        <a href="#">사이렌 오더 주문 건수 제한 안내(11/2~12/31)</a>
-                                    </li> -->
-                                </ul>
-                            </dd>
+                            <div class="content">
+                                <div class="content__container">
+                                    <!--공지사항 내용 바꿈-->
+                                    <ul class="news_result content__container__list">
+                                        <li class="content__container__list__item">
+                                            <a href="#" id="bannerLink">2021 플래너 쿠폰 3종 유효 기간 연장 안내</a>
+                                        </li>
+                                        <li class="content__container__list__item">
+                                            <a href="#">시스템 개선 및 점검 안내</a>
+                                        </li>
+                                        <li class="content__container__list__item">
+                                            <a href="#">[채용] 스타벅스커피 코리아 바리스타 채용 안내 </a>
+                                        </li>
+                                        <li class="content__container__list__item">
+                                            <a href="#">사이렌 오더 주문 건수 제한 안내(11/2~12/31)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#"><img class="plusbtn" src="img/plus.png" alt="plusbtn"></a>
                         </dl>
                     </div>
                 </div>
@@ -1103,7 +1088,6 @@
             </div>
             <span class="en">ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.</span>
         </aside>
-
     </footer>
     
     <!--AOS 라이브러리 적용-->
@@ -1111,16 +1095,31 @@
     <script>
         AOS.init();
     </script>
-
+    <script>
+        $(function() {
+          $('.slidergroup').slick( { 
+              autoplay: true,
+            autoplaySpeed: 3000,
+  
+          });
+        });
+      </script>
     
     <script>
+
         /** 프로모션 클릭해서 사라지고 열고 **/
-        function doDisplay(){
+        function doDisplay() {
+            const off_prom = document.getElementById("off_prom");
+            const on_prom = document.getElementById("on_prom");
 	        var con = document.getElementById("promotion");
-	        if(con.style.display=='none'){
-		    con.style.display = 'block';
-	        }else{
-		    con.style.display = 'none';
+	        if (con.style.display == 'none') {
+                con.style.display = 'block';
+                off_prom.style.display = 'none';
+                on_prom.style.display = 'block';
+	        } else {
+                con.style.display = 'none';
+                off_prom.style.display = 'block';
+                on_prom.style.display = 'none';
 	        }
         }
     </script>
