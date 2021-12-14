@@ -1,5 +1,5 @@
 /**
-* @filename : style.css
+* @filename : starbucks.css
 * @description : CSS
 * @author : 김경의 (chanillekim@gmail.com)
 **/
@@ -240,7 +240,7 @@ html, body {
     height: 274px;
     z-index: 1;
     border-top: 0.5px solid black;
-    border-bottom: 0.5px solid black;
+    border-radius: 10px;
     transition: 0.5s ease-in-out;
 }
 .dropdown-content {
