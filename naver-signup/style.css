@@ -1,0 +1,203 @@
+/* 
+* @filename : style.css
+* @description : CSS 
+* @author : 김경의 (chanillekim@gmail.com)
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6f7;
+}
+.mainlogo {
+    text-align: center;
+    padding: 50px 0px 40px 0px;
+}
+
+/** 아이디 입력창 주소(오른쪽) **/
+.inside_id {
+    position: absolute;
+    top: 52px;
+    right: 15px;
+    font-size: 15px;
+    color: #8e8e8e;
+}
+
+/** 비밀번호 입력창 이모티콘 **/
+.inside_pass {
+    position: absolute;
+    top: 50px;
+    right: 13px;
+    font-size: 15px;
+}
+
+/** 전체 틀(박스) **/
+.form-horizontal {
+    border: 5px soild #d5d5d5;
+    width: 500px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+/** 라벨박스 **/
+.form-group::after {
+    content: '';
+    display: block;
+    clear: both;
+    float: none;
+}
+.form-group {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.form-group:last-child {
+    border-bottom: 0;
+}
+
+/** 라벨들! **/
+.labels {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0px;
+    padding-bottom: 7px;
+
+}
+/** 입력하는곳 **/
+.col-md-12 {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 14px;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+}
+
+
+/** 생년월일 **/
+#form-bir {
+    width: 502px;
+}
+.int {
+    width: 138px;
+    float: left;
+    padding: 15px 10px;
+    font-size: 14px;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+}
+.int1 {
+    margin: 0px 10px;
+    width: 160px;
+    float: left;
+    padding: 14px 10px;
+    font-size: 14px;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+}
+.int3 {
+    width: 138px;
+    float: left;
+    padding: 15px 10px;
+    font-size: 14px;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+}
+
+/** gender 성별 **/
+.sel{
+    width: 502px;
+    float: left;
+    padding: 15px 10px;
+    font-size: 14px;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+}
+
+
+/** 이메일 입력 **/
+.identify {
+    font-size: 13px;
+    color: #8e8e8e;
+    font-weight: normal;
+}
+.email {
+    font-size: 14px;
+    width: 98%;
+    padding-left: 10px;
+}
+
+/** 연락처 **/
+.numbergroup {
+    width: 502px;
+    margin: 10px 0px;
+}
+.telnum {
+    font-size: 14px;
+    width: 365px;
+    position: flex;
+    padding-left: 10px;
+    margin-right: 7px;
+}
+.telprove {
+    font-size: 14px;
+    width: 113px;
+    text-align: center;
+    background-color: #03c75a;
+    color: white;
+    border: none;
+}
+
+/** 가입하기 **/
+.text-center button {
+    text-align: center;
+    background-color: #03c75a;
+    border: none;
+    color: white;
+    margin: 10px 0px;
+    width: 502px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/** footer **/
+.foot {
+    list-style: none;
+    float: left;
+    padding-left: 10px;
+}
+.footy {
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size: 12px;
+    border-right: #8e8e8e;
+}
+.foot-group::after {
+    float: none;
+    display: block;
+    clear: both;
+    content: "";
+}
+.foot-group {
+    text-align: center;
+    padding-left: 60px;
+}
+.copyright {
+    color: #8e8e8e;
+    text-align: center;
+    font-size: 13px;
+    margin-top: -8px;
+}
+/** 눌렀을때 **/
+input:focus, select:focus {
+    outline: 1px solid #03c75a;
+}
+
