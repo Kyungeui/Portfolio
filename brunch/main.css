@@ -1,11 +1,3 @@
-/**
-* @filename : starbucks.css
-* @description : CSS
-* @author : 김경의 (chanillekim@gmail.com)
-**/
-
-@charset "utf-8";
-
 /* 공통처리 */
 * {
     font-family: 'Noto Sans KR', sans-serif;
