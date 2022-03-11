@@ -1,0 +1,234 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Karma", serif;
+  text-align: center;
+}
+.content {
+  padding: 8px 50px;
+  padding-top: 40px;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+.logo {
+  width: auto;
+  height: 30px;
+  position: absolute;
+  display: block;
+  left: 47%;
+  text-align: center;
+}
+.side {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  width: auto;
+  height: 30px;
+  margin-left: 1100px;
+}
+
+/* content 사진들 */
+.pictureline {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.img1 {
+  padding: 0 8px;
+  float: left;
+  width: 23%;
+}
+
+.pictureline h2 {
+  margin: 10px 0;
+}
+.pictureline p {
+  margin: 20px 0;
+}
+.pictureline .space {
+  margin: 20px 0;
+}
+
+.pictureline::after {
+  clear: both;
+  float: none;
+  content: "";
+  display: block;
+}
+/** 페이지 버튼 **/
+.pagebtn {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+.pagebtn > ul {
+  list-style: none;
+  width: auto;
+  height: 50px;
+}
+.pagebtn li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+.pagebtn a {
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0;
+  text-decoration: none;
+  color: #222;
+}
+.pagebtn .first1:first-child {
+  background-color: #222;
+  color: #fff;
+}
+.pagebtn a:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+/** 설명 어바웃 미 **/
+
+.aboutme {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 1160px;
+  margin: auto;
+}
+.cheftitle {
+  margin: 40px;
+}
+.whoiam {
+  margin: 30px;
+}
+.whoiam > h3 {
+  padding: 10px;
+}
+.goodfood {
+  font-style: italic;
+}
+.whoiam p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/** 하단 영역 **/
+.footer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  width: 1220px;
+  margin: 0;
+  text-align: left;
+  height: 200px;
+}
+.leftfoot {
+  float: left;
+  width: 30%;
+  padding-right: 40px;
+}
+.leftfoot > h2 {
+  padding-bottom: 20px;
+}
+.leftfoot p {
+  padding: 10px 0;
+}
+
+/** 풋 가운데꺼 이미지 **/
+
+.leftfoot img {
+  width: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
+.leftfoot ul {
+  list-style: none;
+  float: left;
+}
+.leftfoot li {
+  width: 350px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.footertitle {
+  display: block;
+  width: 30px;
+  margin-left: 60px;
+  padding-top: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+.footermini {
+  width: 30px;
+  margin-left: 10px;
+}
+.colorpost:hover {
+  background-color: #dadde8;
+}
+
+.footermini::after {
+  clear: both;
+  float: none;
+  content: "";
+  display: block;
+}
+.rightfoot::after {
+  clear: both;
+  float: none;
+  content: "";
+  display: block;
+}
+
+.rightfoot > h2 {
+  padding-bottom: 30px;
+}
+
+/** 태그들!! **/
+.rightfoot p {
+  width: 400;
+  margin: auto;
+}
+.colorbox {
+  background-color: #222;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+.minibox {
+  background-color: #7d7e85;
+  display: inline-block;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+/** the end **/
